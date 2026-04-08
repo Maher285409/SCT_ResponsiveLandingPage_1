@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SpiceHouse</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+<nav id="navbar">
+  <h2 class="logo">SpiceHouse 🇮🇳</h2>
+
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#best-food">Menu</a></li>
+    <li><a href="#offers">Offers</a></li>
+    <li><a href="#partners">Contact</a></li>
+  </ul>
+
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+</nav>
+
+
+<section id="home" class="hero">
+  <video autoplay muted loop class="bg-video">
+    <source src="12888336_1080_1920_30fps.mp4" type="video/mp4" />
+  </video>
+
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <h1>Taste the Real India 🍛</h1>
+    <p>Authentic flavours delivered to you</p>
+    <button>Order Now</button>
+  </div>
+</section>
+
+
+<section id="best-food" class="best-food">
+  <h2>Order Our Best Food 🍛</h2>
+
+  <div class="food-container">
+    <div class="food-card">
+      <img src="hyderbiri.jpg" />
+      <h3>Hyderabadi Biryani</h3>
+      <p>₹249</p>
+    </div>
+
+    <div class="food-card">
+      <img src="hyderabadibiriyani.jpg" />
+      <h3>Butter Chicken</h3>
+      <p>₹299</p>
+    </div>
+
+    <div class="food-card">
+      <img src="paneertikka.jpg" />
+      <h3>Paneer Tikka</h3>
+      <p>₹199</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="offers" class="offers">
+  <h2>Discover Best Offers 💸</h2>
+
+  <div class="offer-container">
+    <div class="offer-card">
+      <h3>50% OFF</h3>
+      <p>On your first order</p>
+    </div>
+
+    <div class="offer-card">
+      <h3>Free Delivery</h3>
+      <p>On orders above ₹199</p>
+    </div>
+
+    <div class="offer-card">
+      <h3>Combo Deal</h3>
+      <p>Biryani + Drink ₹299</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="filter" class="filter-food">
+  <h2>Choose Your Preference 🍽️</h2>
+
+  <div class="buttons">
+    <button onclick="showVeg()">🌱 Veg</button>
+    <button onclick="showNonVeg()">🍗 Non-Veg</button>
+  </div>
+
+  <div class="food-list">
+    <div class="food-item veg">
+      <h3>Paneer Butter Masala</h3>
+    </div>
+
+    <div class="food-item veg">
+      <h3>Masala Dosa</h3>
+    </div>
+
+    <div class="food-item nonveg">
+      <h3>Chicken Biryani</h3>
+    </div>
+
+    <div class="food-item nonveg">
+      <h3>Chicken Tikka</h3>
+    </div>
+  </div>
+</section>
+
+
+<section id="party" class="party">
+  <div class="party-container">
+
+    <div class="party-text">
+      <h2>Plan Your Party With Us 🎉</h2>
+      <p>
+        Celebrate your special moments with delicious Indian food.
+        We provide catering for birthdays, weddings and events.
+      </p>
+      <button>Book Now</button>
+    </div>
+
+    <div class="party-image">
+      <img src="foodparty.jpg" />
+    </div>
+
+  </div>
+</section>
+
+
+<section id="train" class="train">
+  <h2>Food On Train 🚆</h2>
+
+  <div class="train-container">
+    <div class="train-card">
+      <h3>Order While Traveling</h3>
+      <p>Get fresh Indian food delivered to your train seat.</p>
+      <button>Order Now</button>
+    </div>
+  </div>
+</section>
+
+
+<section id="gift" class="gift">
+  <div class="gift-container">
+
+    <div class="gift-text">
+      <h2>Gift Delicious Moments 🎁</h2>
+      <p>
+        Send food gift cards to your loved ones and make their day special.
+      </p>
+      <button>Buy Gift Card</button>
+    </div>
+
+    <div class="gift-image">
+      <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da" />
+    </div>
+
+  </div>
+</section>
+
+
+<section id="partners" class="partners">
+  <h2>Our Partners 🤝</h2>
+
+  <div class="partner-logos">
+    <div class="logo">Swiggy</div>
+    <div class="logo">Zomato</div>
+    <div class="logo">Uber Eats</div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <h2>SpiceHouse 🇮🇳</h2>
+  <p>Email: spicehouse@email.com</p>
+  <p>Phone: +91 9876543210</p>
+
+  <p class="copy">© 2026 SpiceHouse. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
