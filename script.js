@@ -1,4 +1,4 @@
-// SCROLL EFFECT
+
 window.addEventListener("scroll", function() {
   let nav = document.getElementById("navbar");
 
@@ -9,7 +9,7 @@ window.addEventListener("scroll", function() {
   }
 });
 
-// MOBILE MENU TOGGLE
+
 let toggle = document.getElementById("menu-toggle");
 let links = document.querySelector(".nav-links");
 
