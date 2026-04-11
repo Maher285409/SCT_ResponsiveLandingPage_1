@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -48,9 +48,7 @@
 
       <div class="hero-content">
         <div class="search-box">
-          <span class="search-icon"></span>
           <input type="text" placeholder="Search for dishes, restaurants..." />
-          <button class="search-btn">Search</button>
         </div>
         <h1>Taste the Real India</h1>
         <p>Authentic flavours delivered to you</p>
@@ -58,8 +56,9 @@
       </div>
     </section>
 
+    <!-- Category -->
     <section class="categories">
-      <div class="container">
+      
         <h2 class="section-title">What are you craving today?</h2>
 
         <div class="category-row">
@@ -109,6 +108,21 @@
           </div>
 
           <div class="category">
+            <img src="gulabjamun.jpg" alt="Khichdi" />
+            <p>Gulab Jamun</p>
+          </div>
+
+          <div class="category">
+            <img src="masaladosa.jpg" alt="Khichdi" />
+            <p>Masala Dosa</p>
+          </div>
+
+          <div class="category">
+            <img src="paneer.jpg" alt="Khichdi" />
+            <p>Paneer</p>
+          </div>
+
+          <div class="category">
             <img src="cake3.jpg" alt="Nihari" />
             <p>Nihari</p>
           </div>
@@ -123,10 +137,10 @@
       <!-- FILTER BAR -->
       <div class="filter-bar">
         <button class="filter-chip active" data-filter="all">All</button>
-        <button class="filter-chip" data-filter="veg">🌿 Veg</button>
-        <button class="filter-chip" data-filter="nonveg">🍗 Non-Veg</button>
-        <button class="filter-chip" data-filter="biryani">🍛 Biryani</button>
-        <button class="filter-chip" data-filter="dessert">🍰 Dessert</button>
+        <button class="filter-chip" data-filter="veg">Veg</button>
+        <button class="filter-chip" data-filter="nonveg">Non-Veg</button>
+        <button class="filter-chip" data-filter="biryani">Biryani</button>
+        <button class="filter-chip" data-filter="dessert">Dessert</button>
       </div>
 
       <!-- FOOD GRID -->
@@ -150,6 +164,17 @@
           </div>
           <div class="food-content">
             <h3>Masala Dosa</h3>
+            <p>Crispy & delicious</p>
+          </div>
+        </div>
+
+        <div class="food-item veg">
+          <div class="food-image">
+            <img src="cholebhature.jpg" alt="" />
+            <span class="tag veg-tag">🌿 Veg</span>
+          </div>
+          <div class="food-content">
+            <h3>Chotebhature</h3>
             <p>Crispy & delicious</p>
           </div>
         </div>
@@ -576,13 +601,13 @@
 
         <!-- SOCIAL -->
         <div class="footer-col">
-          <h3>Follow Us</h3>
-          <div class="social-icons">
-            <span>📸</span>
-            <span>🐦</span>
-            <span>📘</span>
-          </div>
-        </div>
+        <h3>Follow Us</h3>
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+  </div>
+</div>
       </div>
 
       <!-- BOTTOM -->
@@ -590,10 +615,24 @@
         <p>© 2026 SpiceHouse. All rights reserved.</p>
 
         <div class="app-buttons">
-          <button class="app-btn">📱 Google Play</button>
-          <button class="app-btn">🍎 App Store</button>
-        </div>
-      </div>
+  <a href="#" class="app-btn">
+    <i class="fab fa-google-play"></i>
+    <span>
+      <small>Get it on</small><br>
+      Google Play
+    </span>
+  </a>
+
+  <a href="#" class="app-btn">
+    <i class="fab fa-apple"></i>
+    <span>
+      <small>Download on the</small><br>
+      App Store
+    </span>
+  </a>
+</div>
+
+<section class="best-food reveal"></section>
     </footer>
 
     <script src="script.js"></script>
