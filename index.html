@@ -11,32 +11,32 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <!-- NAVBAR -->
-    <header class="header">
-      <nav class="navbar container">
-        <!-- Logo -->
+    <nav id="navbar" class="navbar">
+      <div class="container nav-wrapper">
         <div class="logo">
           <img src="Screenshot 2026-04-11 002611.png" alt="logo" />
           <span>SpiceHouse</span>
         </div>
 
-        <!-- Nav Links -->
         <ul class="nav-links" id="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#best-food">Menu</a></li>
-          <li><a href="#offers">Offers</a></li>
-          <li><a href="#partners">Contact</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Offers</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
 
-        <!-- Mobile Toggle -->
         <div class="menu-toggle" id="menu-toggle">☰</div>
-      </nav>
-    </header>
+      </div>
+    </nav>
 
     <!-- HERO -->
     <section class="hero">
@@ -47,18 +47,23 @@
       <div class="overlay"></div>
 
       <div class="hero-content">
-        <div class="search-box">
-          <input type="text" placeholder="Search for dishes, restaurants..." />
+        <div class="container">
+          <div class="search-box">
+            <input
+              type="text"
+              placeholder="Search for dishes, restaurants..."
+            />
+          </div>
+          <h1>Taste the Real India</h1>
+          <p>Authentic flavours delivered to you</p>
+          <button class="btn-primary">Order Now</button>
         </div>
-        <h1>Taste the Real India</h1>
-        <p>Authentic flavours delivered to you</p>
-        <button class="btn-primary">Order Now</button>
       </div>
     </section>
 
     <!-- Category -->
     <section class="categories">
-      
+      <div class="container">
         <h2 class="section-title">What are you craving today?</h2>
 
         <div class="category-row">
@@ -108,17 +113,17 @@
           </div>
 
           <div class="category">
-            <img src="gulabjamun.jpg" alt="Khichdi" />
+            <img src="gulabjamun.jpg" alt="Gulab Jamun" />
             <p>Gulab Jamun</p>
           </div>
 
           <div class="category">
-            <img src="masaladosa.jpg" alt="Khichdi" />
+            <img src="masaladosa.jpg" alt="Masala Dosa" />
             <p>Masala Dosa</p>
           </div>
 
           <div class="category">
-            <img src="paneer.jpg" alt="Khichdi" />
+            <img src="paneer.jpg" alt="Paneer" />
             <p>Paneer</p>
           </div>
 
@@ -132,83 +137,85 @@
 
     <!-- Filter -->
     <section id="filter" class="filter-food">
-      <h2 class="section-title">Choose Your Preference</h2>
+      <div class="container">
+        <h2 class="section-title">Choose Your Preference</h2>
 
-      <!-- FILTER BAR -->
-      <div class="filter-bar">
-        <button class="filter-chip active" data-filter="all">All</button>
-        <button class="filter-chip" data-filter="veg">Veg</button>
-        <button class="filter-chip" data-filter="nonveg">Non-Veg</button>
-        <button class="filter-chip" data-filter="biryani">Biryani</button>
-        <button class="filter-chip" data-filter="dessert">Dessert</button>
-      </div>
-
-      <!-- FOOD GRID -->
-      <div class="food-list">
-        <!-- CARD -->
-        <div class="food-item veg">
-          <div class="food-image">
-            <img src="paneer.jpg" alt="" />
-            <span class="tag veg-tag">🌿 Veg</span>
-          </div>
-          <div class="food-content">
-            <h3>Paneer Butter Masala</h3>
-            <p>Rich creamy curry</p>
-          </div>
+        <!-- FILTER BAR -->
+        <div class="filter-bar">
+          <button class="filter-chip active" data-filter="all">All</button>
+          <button class="filter-chip" data-filter="veg">Veg</button>
+          <button class="filter-chip" data-filter="nonveg">Non-Veg</button>
+          <button class="filter-chip" data-filter="biryani">Biryani</button>
+          <button class="filter-chip" data-filter="dessert">Dessert</button>
         </div>
 
-        <div class="food-item veg">
-          <div class="food-image">
-            <img src="dosa.jpg" alt="" />
-            <span class="tag veg-tag">🌿 Veg</span>
+        <!-- FOOD GRID -->
+        <div class="food-list">
+          <!-- CARD -->
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="paneer.jpg" alt="" />
+              <span class="tag veg-tag">🌿 Veg</span>
+            </div>
+            <div class="food-content">
+              <h3>Paneer Butter Masala</h3>
+              <p>Rich creamy curry</p>
+            </div>
           </div>
-          <div class="food-content">
-            <h3>Masala Dosa</h3>
-            <p>Crispy & delicious</p>
-          </div>
-        </div>
 
-        <div class="food-item veg">
-          <div class="food-image">
-            <img src="cholebhature.jpg" alt="" />
-            <span class="tag veg-tag">🌿 Veg</span>
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="dosa.jpg" alt="" />
+              <span class="tag veg-tag">🌿 Veg</span>
+            </div>
+            <div class="food-content">
+              <h3>Masala Dosa</h3>
+              <p>Crispy & delicious</p>
+            </div>
           </div>
-          <div class="food-content">
-            <h3>Chotebhature</h3>
-            <p>Crispy & delicious</p>
-          </div>
-        </div>
 
-        <div class="food-item nonveg biryani">
-          <div class="food-image">
-            <img src="biryani.jpg" alt="" />
-            <span class="tag nonveg-tag">🍗 Non-Veg</span>
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="cholebhature.jpg" alt="" />
+              <span class="tag veg-tag">🌿 Veg</span>
+            </div>
+            <div class="food-content">
+              <h3>Chotebhature</h3>
+              <p>Crispy & delicious</p>
+            </div>
           </div>
-          <div class="food-content">
-            <h3>Chicken Biryani</h3>
-            <p>Spicy & flavorful</p>
-          </div>
-        </div>
 
-        <div class="food-item nonveg">
-          <div class="food-image">
-            <img src="tikka.jpg" alt="" />
-            <span class="tag nonveg-tag">🍗 Non-Veg</span>
+          <div class="food-item nonveg biryani">
+            <div class="food-image">
+              <img src="biryani.jpg" alt="" />
+              <span class="tag nonveg-tag">🍗 Non-Veg</span>
+            </div>
+            <div class="food-content">
+              <h3>Chicken Biryani</h3>
+              <p>Spicy & flavorful</p>
+            </div>
           </div>
-          <div class="food-content">
-            <h3>Chicken Tikka</h3>
-            <p>Grilled perfection</p>
-          </div>
-        </div>
 
-        <div class="food-item veg dessert">
-          <div class="food-image">
-            <img src="gulabjamun.jpg" alt="" />
-            <span class="tag veg-tag">🌿 Veg</span>
+          <div class="food-item nonveg">
+            <div class="food-image">
+              <img src="tikka.jpg" alt="" />
+              <span class="tag nonveg-tag">🍗 Non-Veg</span>
+            </div>
+            <div class="food-content">
+              <h3>Chicken Tikka</h3>
+              <p>Grilled perfection</p>
+            </div>
           </div>
-          <div class="food-content">
-            <h3>Gulab Jamun</h3>
-            <p>Sweet & soft</p>
+
+          <div class="food-item veg dessert">
+            <div class="food-image">
+              <img src="gulabjamun.jpg" alt="" />
+              <span class="tag veg-tag">🌿 Veg</span>
+            </div>
+            <div class="food-content">
+              <h3>Gulab Jamun</h3>
+              <p>Sweet & soft</p>
+            </div>
           </div>
         </div>
       </div>
@@ -216,232 +223,225 @@
 
     <!-- BEST FOOD -->
     <section id="best-food" class="best-food">
-      <h2 class="section-title">Order Our Best Food</h2>
-      <div class="food-container">
-        <div class="food-card">
-          <div class="food-img">
-            <img src="hyderbiri.jpg" />
-            <span class="badge">🔥 Bestseller</span>
+      <div class="container">
+        <h2 class="section-title">Order Our Best Food</h2>
+
+        <div class="food-container">
+          <div class="food-card">
+            <div class="food-img">
+              <img src="hyderbiri.jpg" />
+              <span class="badge">🔥 Bestseller</span>
+            </div>
+
+            <div class="food-info">
+              <h3>Hyderabadi Biryani</h3>
+              <div class="food-meta">
+                <span>⭐ 4.5</span>
+                <span>30 mins</span>
+              </div>
+              <div class="food-bottom">
+                <p class="price">₹249</p>
+                <button class="add-btn">Add</button>
+              </div>
+            </div>
           </div>
 
-          <div class="food-info">
-            <h3>Hyderabadi Biryani</h3>
-            <div class="food-meta">
-              <span>⭐ 4.5</span>
-              <span>30 mins</span>
+          <div class="food-card">
+            <div class="food-img">
+              <img src="paneertikka.jpg" />
+              <span class="badge">🔥 Popular</span>
             </div>
-            <div class="food-bottom">
-              <p class="price">₹249</p>
-              <button class="add-btn">Add</button>
-            </div>
-          </div>
-        </div>
 
-        <div class="food-card">
-          <div class="food-img">
-            <img src="paneertikka.jpg" />
-            <span class="badge">🔥 Popular</span>
+            <div class="food-info">
+              <h3>Paneer Tikka</h3>
+              <div class="food-meta">
+                <span>⭐ 4.4</span>
+                <span>25 mins</span>
+              </div>
+              <div class="food-bottom">
+                <p class="price">₹199</p>
+                <button class="add-btn">Add</button>
+              </div>
+            </div>
           </div>
 
-          <div class="food-info">
-            <h3>Paneer Tikka</h3>
-            <div class="food-meta">
-              <span>⭐ 4.4</span>
-              <span>25 mins</span>
+          <div class="food-card">
+            <div class="food-img">
+              <img src="cake2.jpg" />
+              <span class="badge">🔥 Bestseller</span>
             </div>
-            <div class="food-bottom">
-              <p class="price">₹199</p>
-              <button class="add-btn">Add</button>
+            <div class="food-info">
+              <h3>kichdi</h3>
+              <div class="food-meta">
+                <span>⭐ 4.6</span>
+                <span>35 mins</span>
+              </div>
+              <div class="food-bottom">
+                <p class="price">₹299</p>
+                <button class="add-btn">Add</button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Butter Chicken -->
-        <div class="food-card">
-          <div class="food-img">
-            <img src="cake2.jpg" alt="Butter Chicken" />
-            <span class="badge">🔥 Bestseller</span>
-          </div>
-          <div class="food-info">
-            <h3>kichdi</h3>
-            <div class="food-meta">
-              <span>⭐ 4.6</span>
-              <span>35 mins</span>
+          <div class="food-card">
+            <div class="food-img">
+              <img src="masaladosa.jpg" />
+              <span class="badge">⭐ Popular</span>
             </div>
-            <div class="food-bottom">
-              <p class="price">₹299</p>
-              <button class="add-btn">Add</button>
+            <div class="food-info">
+              <h3>Masala Dosa</h3>
+              <div class="food-meta">
+                <span>⭐ 4.3</span>
+                <span>20 mins</span>
+              </div>
+              <div class="food-bottom">
+                <p class="price">₹149</p>
+                <button class="add-btn">Add</button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Masala Dosa -->
-        <div class="food-card">
-          <div class="food-img">
-            <img src="masaladosa.jpg" alt="Masala Dosa" />
-            <span class="badge">⭐ Popular</span>
-          </div>
-          <div class="food-info">
-            <h3>Masala Dosa</h3>
-            <div class="food-meta">
-              <span>⭐ 4.3</span>
-              <span>20 mins</span>
+          <div class="food-card">
+            <div class="food-img">
+              <img src="cholebhature.jpg" />
+              <span class="badge">🔥 Hot</span>
             </div>
-            <div class="food-bottom">
-              <p class="price">₹149</p>
-              <button class="add-btn">Add</button>
+            <div class="food-info">
+              <h3>Chole Bhature</h3>
+              <div class="food-meta">
+                <span>⭐ 4.4</span>
+                <span>25 mins</span>
+              </div>
+              <div class="food-bottom">
+                <p class="price">₹179</p>
+                <button class="add-btn">Add</button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Chole Bhature -->
-        <div class="food-card">
-          <div class="food-img">
-            <img src="cholebhature.jpg" alt="Chole Bhature" />
-            <span class="badge">🔥 Hot</span>
-          </div>
-          <div class="food-info">
-            <h3>Chole Bhature</h3>
-            <div class="food-meta">
-              <span>⭐ 4.4</span>
-              <span>25 mins</span>
+          <div class="food-card">
+            <div class="food-img">
+              <img src="tandoori.jpg" />
+              <span class="badge">🔥 Bestseller</span>
             </div>
-            <div class="food-bottom">
-              <p class="price">₹179</p>
-              <button class="add-btn">Add</button>
+            <div class="food-info">
+              <h3>Tandoori Chicken</h3>
+              <div class="food-meta">
+                <span>⭐ 4.7</span>
+                <span>40 mins</span>
+              </div>
+              <div class="food-bottom">
+                <p class="price">₹299</p>
+                <button class="add-btn">Add</button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Tandoori Chicken -->
-        <div class="food-card">
-          <div class="food-img">
-            <img src="tandoori.jpg" alt="Tandoori Chicken" />
-            <span class="badge">🔥 Bestseller</span>
-          </div>
-          <div class="food-info">
-            <h3>Tandoori Chicken</h3>
-            <div class="food-meta">
-              <span>⭐ 4.7</span>
-              <span>40 mins</span>
+          <div class="food-card">
+            <div class="food-img">
+              <img src="pavbhaji.jpg" />
+              <span class="badge">⭐ Popular</span>
             </div>
-            <div class="food-bottom">
-              <p class="price">₹299</p>
-              <button class="add-btn">Add</button>
+            <div class="food-info">
+              <h3>Pav Bhaji</h3>
+              <div class="food-meta">
+                <span>⭐ 4.5</span>
+                <span>20 mins</span>
+              </div>
+              <div class="food-bottom">
+                <p class="price">₹159</p>
+                <button class="add-btn">Add</button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Pav Bhaji -->
-        <div class="food-card">
-          <div class="food-img">
-            <img src="pavbhaji.jpg" alt="Pav Bhaji" />
-            <span class="badge">⭐ Popular</span>
-          </div>
-          <div class="food-info">
-            <h3>Pav Bhaji</h3>
-            <div class="food-meta">
-              <span>⭐ 4.5</span>
-              <span>20 mins</span>
+          <div class="food-card">
+            <div class="food-img">
+              <img src="gulabjamun.jpg" />
+              <span class="badge">🍬 Sweet</span>
             </div>
-            <div class="food-bottom">
-              <p class="price">₹159</p>
-              <button class="add-btn">Add</button>
+            <div class="food-info">
+              <h3>Gulab Jamun</h3>
+              <div class="food-meta">
+                <span>⭐ 4.6</span>
+                <span>15 mins</span>
+              </div>
+              <div class="food-bottom">
+                <p class="price">₹99</p>
+                <button class="add-btn">Add</button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Gulab Jamun -->
-        <div class="food-card">
-          <div class="food-img">
-            <img src="gulabjamun.jpg" alt="Gulab Jamun" />
-            <span class="badge">🍬 Sweet</span>
-          </div>
-          <div class="food-info">
-            <h3>Gulab Jamun</h3>
-            <div class="food-meta">
-              <span>⭐ 4.6</span>
-              <span>15 mins</span>
+          <div class="food-card">
+            <div class="food-img">
+              <img src="samosa.jpg" />
+              <span class="badge">🔥 Snack</span>
             </div>
-            <div class="food-bottom">
-              <p class="price">₹99</p>
-              <button class="add-btn">Add</button>
+            <div class="food-info">
+              <h3>Samosa</h3>
+              <div class="food-meta">
+                <span>⭐ 4.2</span>
+                <span>10 mins</span>
+              </div>
+              <div class="food-bottom">
+                <p class="price">₹39</p>
+                <button class="add-btn">Add</button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Samosa -->
-        <div class="food-card">
-          <div class="food-img">
-            <img src="samosa.jpg" alt="Samosa" />
-            <span class="badge">🔥 Snack</span>
-          </div>
-          <div class="food-info">
-            <h3>Samosa</h3>
-            <div class="food-meta">
-              <span>⭐ 4.2</span>
-              <span>10 mins</span>
+          <div class="food-card">
+            <div class="food-img">
+              <img src="cake3.jpg" />
+              <span class="badge">🌱Non Veg</span>
             </div>
-            <div class="food-bottom">
-              <p class="price">₹39</p>
-              <button class="add-btn">Add</button>
+            <div class="food-info">
+              <h3>Nihari</h3>
+              <div class="food-meta">
+                <span>⭐ 4.3</span>
+                <span>30 mins</span>
+              </div>
+              <div class="food-bottom">
+                <p class="price">₹199</p>
+                <button class="add-btn">Add</button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Veg Biryani -->
-        <div class="food-card">
-          <div class="food-img">
-            <img src="cake3.jpg" alt="Veg Biryani" />
-            <span class="badge">🌱Non Veg</span>
-          </div>
-          <div class="food-info">
-            <h3>Nihari</h3>
-            <div class="food-meta">
-              <span>⭐ 4.3</span>
-              <span>30 mins</span>
+          <div class="food-card">
+            <div class="food-img">
+              <img src="naan.jpg" />
+              <span class="badge">🔥 Trending</span>
             </div>
-            <div class="food-bottom">
-              <p class="price">₹199</p>
-              <button class="add-btn">Add</button>
+            <div class="food-info">
+              <h3>Naan</h3>
+              <div class="food-meta">
+                <span>⭐ 4.4</span>
+                <span>25 mins</span>
+              </div>
+              <div class="food-bottom">
+                <p class="price">₹229</p>
+                <button class="add-btn">Add</button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Chicken Fried Rice -->
-        <div class="food-card">
-          <div class="food-img">
-            <img src="naan.jpg" alt="Chicken Fried Rice" />
-            <span class="badge">🔥 Trending</span>
-          </div>
-          <div class="food-info">
-            <h3>Naan</h3>
-            <div class="food-meta">
-              <span>⭐ 4.4</span>
-              <span>25 mins</span>
+          <div class="food-card">
+            <div class="food-img">
+              <img src="pavbhaji.jpg" />
+              <span class="badge">⭐ Popular</span>
             </div>
-            <div class="food-bottom">
-              <p class="price">₹229</p>
-              <button class="add-btn">Add</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Hakka Noodles -->
-        <div class="food-card">
-          <div class="food-img">
-            <img src="pavbhaji.jpg" alt="Hakka Noodles" />
-            <span class="badge">⭐ Popular</span>
-          </div>
-          <div class="food-info">
-            <h3>Pav Bhaji</h3>
-            <div class="food-meta">
-              <span>⭐ 4.2</span>
-              <span>20 mins</span>
-            </div>
-            <div class="food-bottom">
-              <p class="price">₹179</p>
-              <button class="add-btn">Add</button>
+            <div class="food-info">
+              <h3>Pav Bhaji</h3>
+              <div class="food-meta">
+                <span>⭐ 4.2</span>
+                <span>20 mins</span>
+              </div>
+              <div class="food-bottom">
+                <p class="price">₹179</p>
+                <button class="add-btn">Add</button>
+              </div>
             </div>
           </div>
         </div>
@@ -450,61 +450,66 @@
 
     <!-- TRENDING -->
     <section class="trending">
-      <div class="trending-header">
-        <h2>Trending Now 🔥</h2>
-      </div>
-
-      <div class="trending-row" id="scrollRow">
-        <div class="trend-card">
-          <img src="food1.jpg" alt="" />
-          <div class="trend-info">
-            <h3>50% OFF</h3>
-            <p>Biryani Special</p>
-          </div>
-        </div>
-        <div class="trend-card">
-          <img src="food2.jpg" alt="" />
-          <div class="trend-info">
-            <h3>Hot Deals</h3>
-            <p>Street Food</p>
-          </div>
-        </div>
-        <div class="trend-card">
-          <img src="food3.jpg" alt="" />
-          <div class="trend-info">
-            <h3>Sweet Cravings</h3>
-            <p>Desserts</p>
-          </div>
-        </div>
-        <div class="trend-card">
-          <img src="food4.jpg" alt="" />
-          <div class="trend-info">
-            <h3>Weekend Combo</h3>
-            <p>Pizza & Drinks</p>
-          </div>
+      <div class="container">
+        <div class="trending-header">
+          <h2>Trending Now 🔥</h2>
         </div>
 
-        <div class="trend-card">
-          <img src="tandoori.jpg" alt="" />
-          <div class="trend-info">
-            <h3>Tandoori</h3>
-            <p>Pizza & Drinks</p>
+        <div class="trending-row" id="scrollRow">
+          <div class="trend-card">
+            <img src="food1.jpg" alt="" />
+            <div class="trend-info">
+              <h3>50% OFF</h3>
+              <p>Biryani Special</p>
+            </div>
           </div>
-        </div>
 
-        <div class="trend-card">
-          <img src="cake1.jpg" alt="" />
-          <div class="trend-info">
-            <h3>samosa</h3>
-            <p>Pizza & Drinks</p>
+          <div class="trend-card">
+            <img src="food2.jpg" alt="" />
+            <div class="trend-info">
+              <h3>Hot Deals</h3>
+              <p>Street Food</p>
+            </div>
           </div>
-        </div>
 
-        <div class="trend-card">
-          <img src="gulabjamun.jpg" alt="" />
-          <div class="trend-info">
-            <h3>Weekend Combo</h3>
-            <p>Gulab Jamun</p>
+          <div class="trend-card">
+            <img src="food3.jpg" alt="" />
+            <div class="trend-info">
+              <h3>Sweet Cravings</h3>
+              <p>Desserts</p>
+            </div>
+          </div>
+
+          <div class="trend-card">
+            <img src="food4.jpg" alt="" />
+            <div class="trend-info">
+              <h3>Weekend Combo</h3>
+              <p>Pizza & Drinks</p>
+            </div>
+          </div>
+
+          <div class="trend-card">
+            <img src="tandoori.jpg" alt="" />
+            <div class="trend-info">
+              <h3>Tandoori</h3>
+              <p>Pizza & Drinks</p>
+            </div>
+          </div>
+
+          <div class="trend-card">
+            <img src="cake1.jpg" alt="" />
+            <div class="trend-info">
+              <h3>samosa</h3>
+              <p>Pizza & Drinks</p>
+            </div>
+          </div>
+
+          <div class="trend-card">
+            <img src="gulabjamun.jpg" alt="" />
+            <div class="trend-info">
+              <h3>Weekend Combo</h3>
+              <p>Gulab Jamun</p>
+            </div>
           </div>
         </div>
       </div>
@@ -512,127 +517,130 @@
 
     <!-- OFFERS -->
     <section id="offers" class="offers">
-      <h2 class="section-title">Discover Best Offers</h2>
+      <div class="container">
+        <h2 class="section-title">Discover Best Offers</h2>
 
-      <div class="offer-container">
-        <!-- 50% OFF -->
-        <div class="offer-card">
-          <div class="offer-icon">🔥</div>
-          <h3>50% OFF</h3>
-          <p>On your first order</p>
-          <button class="offer-btn">Grab Now</button>
-        </div>
+        <div class="offer-container">
+          <!-- 50% OFF -->
+          <div class="offer-card">
+            <div class="offer-icon">🔥</div>
+            <h3>50% OFF</h3>
+            <p>On your first order</p>
+            <button class="offer-btn">Grab Now</button>
+          </div>
 
-        <!-- FREE DELIVERY -->
-        <div class="offer-card">
-          <div class="offer-icon">🚚</div>
-          <h3>Free Delivery</h3>
-          <p>On orders above ₹199</p>
-          <button class="offer-btn">Order Now</button>
-        </div>
+          <!-- FREE DELIVERY -->
+          <div class="offer-card">
+            <div class="offer-icon">🚚</div>
+            <h3>Free Delivery</h3>
+            <p>On orders above ₹199</p>
+            <button class="offer-btn">Order Now</button>
+          </div>
 
-        <!-- COMBO -->
-        <div class="offer-card">
-          <div class="offer-icon">🍽️</div>
-          <h3>Combo Deal</h3>
-          <p>Biryani + Drink ₹299</p>
-          <button class="offer-btn">Explore</button>
-        </div>
+          <!-- COMBO -->
+          <div class="offer-card">
+            <div class="offer-icon">🍽️</div>
+            <h3>Combo Deal</h3>
+            <p>Biryani + Drink ₹299</p>
+            <button class="offer-btn">Explore</button>
+          </div>
 
-        <!-- PARTY PLAN -->
-        <div class="offer-card">
-          <div class="offer-icon">🎉</div>
-          <h3>Party Plans</h3>
-          <p>Special catering for events & gatherings</p>
-          <button class="offer-btn">Book Now</button>
-        </div>
+          <!-- PARTY PLAN -->
+          <div class="offer-card">
+            <div class="offer-icon">🎉</div>
+            <h3>Party Plans</h3>
+            <p>Special catering for events & gatherings</p>
+            <button class="offer-btn">Book Now</button>
+          </div>
 
-        <!-- GIFT CARD -->
-        <div class="offer-card">
-          <div class="offer-icon">🎁</div>
-          <h3>Gift Cards</h3>
-          <p>Send delicious surprises to loved ones</p>
-          <button class="offer-btn">Buy Now</button>
+          <!-- GIFT CARD -->
+          <div class="offer-card">
+            <div class="offer-icon">🎁</div>
+            <h3>Gift Cards</h3>
+            <p>Send delicious surprises to loved ones</p>
+            <button class="offer-btn">Buy Now</button>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-      <div class="footer-container">
-        <!-- BRAND -->
-        <div class="footer-col">
-          <h2 class="logo">🍽️ SpiceHouse</h2>
-          <p>Delivering authentic Indian flavors to your doorstep.</p>
-          <p class="contact">📧 spicehouse@email.com</p>
-          <p class="contact">📞 +91 9876543210</p>
+      <div class="container">
+        <div class="footer-container">
+          <!-- BRAND -->
+          <div class="footer-col">
+            <h2 class="logo">🍽️ SpiceHouse</h2>
+            <p>Delivering authentic Indian flavors to your doorstep.</p>
+            <p class="contact">📧 spicehouse@email.com</p>
+            <p class="contact">📞 +91 9876543210</p>
+          </div>
+
+          <!-- COMPANY -->
+          <div class="footer-col">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Team</a></li>
+            </ul>
+          </div>
+
+          <!-- SUPPORT -->
+          <div class="footer-col">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">Help & Support</a></li>
+              <li><a href="#">Partner with us</a></li>
+              <li><a href="#">Ride with us</a></li>
+            </ul>
+          </div>
+
+          <!-- LOCATIONS -->
+          <div class="footer-col">
+            <h3>Available In</h3>
+            <ul>
+              <li>Bangalore</li>
+              <li>Hyderabad</li>
+              <li>Mumbai</li>
+              <li>Delhi</li>
+            </ul>
+          </div>
+
+          <!-- SOCIAL -->
+          <div class="footer-col">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+          </div>
         </div>
 
-        <!-- COMPANY -->
-        <div class="footer-col">
-          <h3>Company</h3>
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Team</a></li>
-          </ul>
-        </div>
+        <!-- BOTTOM -->
+        <div class="footer-bottom">
+          <p>© 2026 SpiceHouse. All rights reserved.</p>
 
-        <!-- SUPPORT -->
-        <div class="footer-col">
-          <h3>Support</h3>
-          <ul>
-            <li><a href="#">Help & Support</a></li>
-            <li><a href="#">Partner with us</a></li>
-            <li><a href="#">Ride with us</a></li>
-          </ul>
-        </div>
+          <div class="app-buttons">
+            <a href="#" class="app-btn">
+              <i class="fab fa-google-play"></i>
+              <span>
+                <small>Get it on</small><br />
+                Google Play
+              </span>
+            </a>
 
-        <!-- LOCATIONS -->
-        <div class="footer-col">
-          <h3>Available In</h3>
-          <ul>
-            <li>Bangalore</li>
-            <li>Hyderabad</li>
-            <li>Mumbai</li>
-            <li>Delhi</li>
-          </ul>
+            <a href="#" class="app-btn">
+              <i class="fab fa-apple"></i>
+              <span>
+                <small>Download on the</small><br />
+                App Store
+              </span>
+            </a>
+          </div>
         </div>
-
-        <!-- SOCIAL -->
-        <div class="footer-col">
-        <h3>Follow Us</h3>
-  <div class="social-icons">
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-facebook"></i></a>
-  </div>
-</div>
       </div>
-
-      <!-- BOTTOM -->
-      <div class="footer-bottom">
-        <p>© 2026 SpiceHouse. All rights reserved.</p>
-
-        <div class="app-buttons">
-  <a href="#" class="app-btn">
-    <i class="fab fa-google-play"></i>
-    <span>
-      <small>Get it on</small><br>
-      Google Play
-    </span>
-  </a>
-
-  <a href="#" class="app-btn">
-    <i class="fab fa-apple"></i>
-    <span>
-      <small>Download on the</small><br>
-      App Store
-    </span>
-  </a>
-</div>
-
-<section class="best-food reveal"></section>
     </footer>
 
     <script src="script.js"></script>
