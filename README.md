@@ -39,12 +39,4 @@ The goal of this project is to understand responsive web design, navigation beha
 
 ---
 
-## 📷 Preview
 
-(Add a screenshot here)
-
----
-
-## 🔗 Live Demo
-
-(Add your deployed link here if available)
